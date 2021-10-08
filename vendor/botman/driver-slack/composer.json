@@ -1,0 +1,54 @@
+{
+    "name": "botman/driver-slack",
+    "license": "MIT",
+    "description": "Slack driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "Slack"
+    ],
+    "homepage": "http://github.com/botman/driver-slack",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "m.pociot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "botman/botman": "~2.1",
+        "mpociot/slack-client": "~1.0"
+    },
+    "require-dev": {
+        "botman/studio-addons": "~1.0",
+        "phpunit/phpunit": "~5.0",
+        "illuminate/console": "~5.0",
+        "illuminate/support": "~5.0",
+        "mockery/mockery": "dev-master",
+        "ext-curl": "*"
+    },
+    "suggest": {
+        "mpociot/slack-client": "Use the Slack RTM API with BotMan"
+    },
+    "autoload": {
+        "psr-4": {
+            "BotMan\\Drivers\\Slack\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "cs": "php-cs-fixer fix"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BotMan\\Drivers\\Slack\\Providers\\SlackServiceProvider"
+            ]
+        }
+    }
+}

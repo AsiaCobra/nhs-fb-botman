@@ -1,0 +1,116 @@
+.settings_page_settings_fbbot .form-table th{
+    display: none;
+}
+#facebook .form-table th {
+    display: block;
+    width: inherit;
+}
+.clonable {
+    padding: 20px;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+.button-clone .clonable {
+    margin-top: 0px;
+}
+button.btn.button-cancel.clonable-button-close {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    border: 1px solid transparent;
+}
+.button-clone button.btn.button-cancel.clonable-button-close {
+     
+    top: 30%;
+     
+}
+button.clonable-button-add.button-primary {
+    margin: 20px;
+    margin-top: 0px;
+}
+.input-group-list {
+    display: inline-block;
+    position: relative;
+}
+.input-group-list label{
+    display: block;
+}
+.input-group-list select,
+.input-group-list input{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.lists-img{
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+label.list-title {
+    position: absolute;
+    top: -25px;
+    background: #f0f0f0;
+    padding: 5px 20px;
+    left: 0;
+    color: black;
+    font-size: 20px;
+}
+.clonable.collapse {
+    height: 0px;
+    overflow: hidden;
+    padding-left: 0;
+}
+.clonable.collapse button.btn.button-cancel.clonable-button-close,
+.clonable.collapse .list-title {
+   position: relative;
+}
+.clonable.collapse .input-group {
+    opacity: 0;;
+}
+.save_result.success {
+    color: #007cba;
+    /* font-size: 15px; */
+}
+.save_result.error {
+    color: #007cba;
+    /* font-size: 15px; */
+}
+.metabox-holder .group{
+    position: relative;
+}
+.metabox-holder.js-ready .group::after,
+.metabox-holder.js-ready .group::before{
+    display: none;
+}
+.metabox-holder .group::after{
+    content: " Please Press  (Shift + f5) .... ";
+    position: fixed;
+    top: 19%;
+    /* bottom: 0; */
+    /* background: #f2f2f2; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 35px;
+    color: #ff0000;
+    font-size: 30px;
+
+}
+.metabox-holder .group::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #e2dcdc54;
+    z-index: 99990;
+    width: 100%;
+    height: auto;
+}

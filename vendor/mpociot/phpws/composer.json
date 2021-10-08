@@ -1,0 +1,22 @@
+{
+    "name": "mpociot/phpws",
+    "description": "WebSocket Server and Client library for PHP",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Devristo",
+            "email": "chris@devristo.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Devristo\\Phpws\\": "src/"
+        }
+    },
+    "require": {
+        "zendframework/zend-log": "2.*",
+        "react/socket": "^1.0 || ^0.8.6",
+        "react/stream": "^1.0 || ^0.7.5",
+        "zendframework/zend-http": "2.*"
+    }
+}

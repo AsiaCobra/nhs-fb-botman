@@ -1,0 +1,17 @@
+{
+    "name": "nhs/botman",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "AsiaCobra",
+            "email": "nayhtet.wordpress@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "botman/botman": "^2.6",
+        "botman/driver-slack": "^2.2",
+        "botman/driver-facebook": "^1.10",
+        "tareq1988/wordpress-settings-api-class": "dev-master"
+    }
+}
